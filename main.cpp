@@ -31,6 +31,8 @@ std::string process_string(const char *str) {
                     }
                     break;
                 }
+                case '0': processed += '\0'; break; // Handle \0 escape sequence
+                
                 // Add more escape sequences
                 default: processed += *src; break;
             }
