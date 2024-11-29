@@ -15,7 +15,7 @@ whitespace  ([ \t\r\n])
 
 /* excluding " and \ including \t */
 printable   ([\x20-\x21\x23-\x5B\x5D-\x7E\t]) 
-escaped     (\\[\\"nrt0]|\\x(2[0-9a-fA-F]|[3-6][0-9a-fA-F]|7[0-9a-eA-E]))
+escaped     (\\[\\"nrt0]|\\x(2[0-9a-fA-F]|[3-6][0-9a-fA-F]|7[0-9a-eA-E]|09|0A|0a|0D|0d))
 
 %x          STR
 
